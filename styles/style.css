@@ -1,0 +1,70 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.game{
+  border: 1px solid black;
+  width: 900px;
+  height: 600px;
+}
+
+#game{
+  display:grid;
+  grid-template-rows: 5% 90% 5%;
+}
+
+.score-and-timer{
+  display:flex;
+  justify-content:space-between;
+  margin: 8px;
+}
+
+#playground{
+  background-image: url(../images/abcd.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.alphabet-box{
+  width: 75px;
+  height: 50px;
+  margin: 8px;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.alphabet-btn{
+  width: 100%;
+  height: 100%;
+}
+
+#health-bar{
+  width:100%;
+  height:100%;
+}
+
+#health{
+  width:100%;
+  height:100%;
+  border: none;
+  background-color:red;
+}
+
+#health{
+  color: green;
+}
+
+#health::-moz-progress-bar {
+  background: green;
+}
+
+#health::-webkit-progress-value {
+  background: green;
+}
+
+#health::-webkit-progress-bar {
+  background: red;
+}

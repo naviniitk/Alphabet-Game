@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body></body>
+    <head>
+        <title>ABC Countdown game</title>
+        <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <main id="game" class="game">
+            <div class="score-and-timer">
+                <div data-score>0</div>
+                <div data-timer>---</div>
+            </div>
+            <div id="playground">
+            </div>
+            <div id = "health-bar"><progress id="health" value="10" max="10"></progress></div>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
