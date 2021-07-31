@@ -72,3 +72,10 @@ body{
 #health::-webkit-progress-bar {
   background: red;
 }
+
+#restart {
+  height: 40px;
+  width: 100px;
+  background-color: lightcoral;
+  border: none;
+}

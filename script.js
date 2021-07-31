@@ -116,7 +116,7 @@ function placeRandom() {
 };
 
 createAlphabetBoxes();
-
+placeRandom();
 
 buttonArray.forEach((button) => {
   button.addEventListener('click', () => {
@@ -134,6 +134,13 @@ buttonArray.forEach((button) => {
       });
 });
 
+function restartGame() {
+  letterArray = [];
+  gameStart = false;
+  for(let i = 0; i < buttonArray.length; i++){
+    buttonArray[i].disabled = false;
+  }
+  placeRandom();
+};
 
 
-placeRandom();
