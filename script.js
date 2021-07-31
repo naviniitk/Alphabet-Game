@@ -99,17 +99,16 @@ function shuffleArray(array) {
   return array;
 }
 
+// functions to place the alphabets on random locations
 function getRandomNumber(min, max) {
-    
   return Math.random() * (max - min) + min;
-    
 }
 
 function placeRandom() {
   const playground = document.getElementById('playground');
   for(let i = 0; i < boxArray.length; i++){
-    const randomTop = getRandomNumber(0, playground.offsetHeight);
-    const randomLeft = getRandomNumber(0, playground.offsetWidth);
+    const randomTop = getRandomNumber(playground.offsetTop, playground.offsetHeight - 100);
+    const randomLeft = getRandomNumber(playground.offsetLeft, playground.offsetWidth);
 
     boxArray[i].style.top = randomTop + 'px';
     boxArray[i].style.left = randomLeft + 'px';
@@ -138,6 +137,3 @@ buttonArray.forEach((button) => {
 
 
 placeRandom();
-
-// const playground = document.getElementById('playground');
-// console.log(playground.offsetHeight);
